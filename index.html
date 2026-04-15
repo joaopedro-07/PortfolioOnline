@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8417e3dabe.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Meu Portifólio</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar" id="nav">
+            <!-- <div class="language-switch">
+                <img src="img/brasil.jpg" alt="Português" data-lang="pt" class="flag hidden">
+                <img src="img/eua.svg" alt="English" data-lang="en" class="flag">
+                <img src="img/espanha.svg" alt="Español" data-lang="es" class="flag">
+            </div> -->
+
+            <!-- <div class="language-switch">
+                <select id="language-select">
+                    <option value="pt">🇧🇷 PT</option>
+                    <option value="en">🇺🇸 EN</option>
+                    <option value="es">🇪🇸 ES</option>
+                </select>
+            </div> -->
+
+            <div class="language-switch">
+
+                <!-- <div class="lang-selected" id="lang-selected">
+                    <img src="img/brasil.jpg" alt="Português">
+                    <span>PT</span>
+                </div> -->
+
+                <div class="lang-selected" id="lang-selected">
+                    <div class="lang-current">
+                        <img src="img/brasil.jpg" alt="Português">
+                        <span>PT</span>
+                    </div>
+                    <span class="lang-arrow">▼</span>
+                </div>
+
+
+                <div class="lang-options" id="lang-options">
+                    <div class="lang-option" data-lang="pt">
+                        <img src="img/brasil.jpg" alt="">
+                        <span>PT</span>
+                    </div>
+
+                    <div class="lang-option" data-lang="en">
+                        <img src="img/eua.svg" alt="">
+                        <span>EN</span>
+                    </div>
+
+                    <div class="lang-option" data-lang="es">
+                        <img src="img/espanha.svg" alt="">
+                        <span>ES</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <span>joaopedro-07</span>
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul class="links" id="menu" role="menu">
+                <li><a href="#inicio_sec" data-key="inicio">Início</a></li>
+                <li><a href="#sobre" data-key="sobre">Sobre</a></li>
+                <li><a href="#habilidades" data-key="habilidades">Habilidades</a></li>
+                <li><a href="#certificacoes" data-key="certificacoes">Certificações</a></li>
+                <li><a href="#projetos_sec" data-key="projetos">Projetos</a></li>
+                <li><a href="#contato" data-key="contato">Contato</a></li>
+                <li>
+                    <a href="https://github.com/joaopedro-07" target="_blank">
+                        <i class="fa-brands fa-github icone"></i>
+                    </a> |
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-da-cunha-machado-2089482b7/" target="_blank">
+                        <i class="fa-brands fa-square-linkedin icone"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio_sec" class="section">
+            <div class="inicio_titulo">
+                <h1>João Pedro Machado</h1>
+                <!-- <h2 id="slogan_text">Atuação em <span id="typing-text" id="typing-animation"></span>
+                </h2> -->
+                <h2 id="slogan_text">
+                    <span data-key="slogan_fixo">Atuação em</span>
+                    <span id="typing-text"></span>
+                </h2>
+
+                <p data-key="p_inicio">Estudante de Análise e Desenvolvimento de Sistemas pelo SENAI, com formação
+                    técnica em Desenvolvimento de Sistemas. Desenvolvo aplicações web e mobile com foco em
+                    boas práticas, organização de código e construção de soluções eficientes.</p>
+            </div>
+
+            <div class="inicio_botoes">
+                <a href="#projetos_sec" id="btn_ver_projetos" data-key="ver_projetos">Ver projetos</a>
+                <a href="#contato" id="btn_contato" data-key="contato">Contato</a>
+            </div>
+        </section>
+        <section id="sobre" class="section">
+            <div class="sobre_titulo">
+                <h1 data-key="titulo_jornada">Minha Jornada</h1>
+                <p data-key="desc_jornada">Um pouco da minha história, meus interesses e o que venho construindo
+                    ultimamente.</p>
+            </div>
+
+            <div class="sobre_card_container">
+                <div class="sobre_card">
+                    <div class="sobre_card_conteudo">
+                        <div class="sobre_texto">
+                            <div class="sobre_icone">
+                                <i class="fa-solid fa-user"></i>
+                                <h2 data-key="sobre_mim">Sobre mim</h2>
+                            </div>
+                            <p data-key="texto_sobre"></p>
+                        </div>
+                        <img src="img/foto_jp.png" alt="Foto de João Pedro Machado" class="sobre_foto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades" class="section">
+            <div class="habilidades_titulo">
+                <h1 data-key="habilidades">Minhas Habilidades</h1>
+                <p data-key="desc_habilidades">Tecnologias e ferramentas que explorei durante minha formação e que sigo
+                    buscando evolução contínua.</p>
+            </div>
+
+            <div class="habilidades_container">
+                <div class="habilidades_lista">
+                    <div class="habilidade_card">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="habilidade_card">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="habilidade_card">
+                        <i class="fa-brands fa-js-square"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <!-- <div class="habilidade_card">
+                        <i class="fa-brands fa-node-js"></i>
+                        <p>Node.js</p>
+                    </div> -->
+                    <div class="habilidade_card">
+                        <i class="fa-brands fa-python"></i>
+                        <p>Python</p>
+                    </div>
+                    <!-- <div class="habilidade_card">
+                        <i class="fa-brands fa-aws"></i>
+                        <p>Cloud Computing</p>
+                    </div> -->
+                    <div class="habilidade_card">
+                        <i class="fa-brands fa-react"></i>
+                        <p>React Native</p>
+                    </div>
+                    <div class="habilidade_card">
+                        <i class="fa-brands fa-php"></i>
+                        <p>PHP</p>
+                    </div>
+                    <div class="habilidade_card">
+                        <i class="fa-solid fa-database"></i>
+                        <p>MySQL</p>
+                    </div>
+                    <div class="habilidade_card">
+                        <i class="fa-brands fa-git"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="habilidade_card">
+                        <i class="fa-brands fa-github"></i>
+                        <p>Github</p>
+                    </div>
+                    <!-- <div class="habilidade_card">
+                        <i class="fa-brands fa-linux"></i>
+                        <p>Linux</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section id="certificacoes" class="section">
+            <div class="certificacoes_titulo">
+                <h1 data-key="certificacoes">Certificações</h1>
+                <p data-key="desc_certificacoes">Algumas das conquitas e certificados que obtive ao longo da minha
+                    trajetória acadêmica.</p>
+            </div>
+
+            <div class="certificacoes_slider_container">
+                <div class="certificacoes_slider">
+                    <!-- primeira sequência -->
+                    <img src="img/python1.png" alt="Python 1">
+                    <img src="img/python2.png" alt="Python 2">
+                    <img src="img/js1.png" alt="JavaScript 1">
+                    <img src="img/js2.png" alt="JavaScript 2">
+                    <img src="img/iiot.png" alt="IIoT">
+                    <img src="img/cybversecurity.png" alt="Cybersecurity">
+                    <img src="img/operating-systems-basics.png" alt="Operating Systems">
+                    <img src="img/badge_cloud.png" alt="Cloud Foundations">
+
+                    <!-- duplicação para looping infinito -->
+                    <img src="img/python1.png" alt="Python 1">
+                    <img src="img/python2.png" alt="Python 2">
+                    <img src="img/js1.png" alt="JavaScript 1">
+                    <img src="img/js2.png" alt="JavaScript 2">
+                    <img src="img/iiot.png" alt="IIoT">
+                    <img src="img/cybversecurity.png" alt="Cybersecurity">
+                    <img src="img/operating-systems-basics.png" alt="Operating Systems">
+                    <img src="img/badge_cloud.png" alt="Cloud Foundations">
+                </div>
+            </div>
+            <div class="certificados_cards">
+
+                <div class="certificado_card">
+                    <div class="certificado_img">
+                        <img src="img/bradesco.jfif" alt="Certificado Curso X">
+                    </div>
+                    <h3 data-key="power_bi">Introdução à Análise de Dados - Microsoft Power BI</h3>
+                </div>
+
+                <div class="certificado_card">
+                    <div class="certificado_img">
+                        <img src="img/jornada_python.png" alt="Certificado Curso Y">
+                    </div>
+                    <h3 data-key="jornada_python">Jornada Python da Hashtag</h3>
+                </div>
+
+                <div class="certificado_card">
+                    <div class="certificado_img">
+                        <img src="img/php_js.jfif" alt="Certificado Curso Z">
+                    </div>
+                    <h3 data-key="vulnerabilidades">Mitigando Vulnerabilidades em PHP e JavaScript</h3>
+                </div>
+
+                <div class="certificado_card">
+                    <div class="certificado_img">
+                        <img src="img/cisco_packet_tracer.jpg" alt="Certificado Curso Z">
+                    </div>
+                    <h3 data-key="packet_tracer">Começando com o Cisco Packet Tracer</h3>
+                </div>
+
+            </div>
+        </section>
+        <section id="projetos_sec" class="section">
+            <div class="projetos_titulo">
+                <h1 data-key="projetos_h1">Projetos Realizados</h1>
+                <p data-key="desc_projetos">Trabalhos que desenvolvi durante a formação, sempre aplicando qualidade,
+                    fundamentos e boas práticas.</p>
+            </div>
+
+            <div class="projetos_container">
+                <div class="projeto_card devexperience">
+                    <div class="projeto_img">
+                        <img src="img/LOGO_SENAI_DEV.png" alt="">
+                    </div>
+                    <div class="projeto_content">
+                        <h1>SENAI Dev Experience</h1>
+                        <p>Site oficial do SENAI Dev Experience, competição de programação criada pelo SENAI Taubaté em
+                            2024. Oferece todas as informações do evento e permite a inscrição dos alunos, além de um
+                            sistema
+                            administrativo completo para os professores.
+                        </p>
+                        <div class="tech_stack">
+                            <span class="tech_title" data-key="tecnologias">Tecnologias utilizadas:</span>
+
+                            <div class="tech_list">
+                                <div class="tech">
+                                    <i class="fa-brands fa-php"></i>
+                                    <span>PHP</span>
+                                </div>
+
+                                <div class="tech">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                </div>
+
+                                <div class="tech">
+                                    <i class="fa-brands fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <div class="tech">
+                                    <i class="fa-solid fa-database"></i>
+                                    <span>MySQL</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://devexperience.aapmsenaitaubate.com.br/index.php" target="_blank"
+                            data-key="ver_projeto">Ver
+                            projeto</a>
+                    </div>
+                </div>
+
+                <div class="projeto_card smi">
+                    <div class="projeto_img">
+                        <img src="img/LOGO_SMI_BRANCA.png" alt="">
+                    </div>
+                    <div class="projeto_content">
+                        <h1>SMI (Sistema de Monitoramento Industrial)</h1>
+                        <p>Desenvolvimento de um sistema de monitoramento industrial em conjunto com um chat-bot,
+                            visando melhorar a eficiência energética e a manutenção inteligente das máquinas industriais
+                        </p>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://github.com/ferreirakaique/SMI-WEB" target="_blank"
+                            data-key="ver_repositorio">Ver
+                            repositório</a>
+                    </div>
+                </div>
+
+                <div class="projeto_card smi">
+                    <div class="projeto_img">
+                        <img src="img/LOGO_SMI_BRANCA.png" alt="">
+                    </div>
+                    <div class="projeto_content">
+                        <h1>Educa+</h1>
+                        <p>Desenvolvimento de um sistema de monitoramento industrial em conjunto com um chat-bot,
+                            visando melhorar a eficiência energética e a manutenção inteligente das máquinas industriais
+                        </p>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://github.com/YagoRGM/SMI-APP" target="_blank" data-key="ver_repositorio">Ver
+                            repositório</a>
+                    </div>
+                </div>
+
+                <div class="projeto_card alpha">
+                    <div class="projeto_img">
+                        <img src="img/alpha.png" alt="">
+                    </div>
+                    <div class="projeto_content">
+                        <h1>Alpha</h1>
+                        <p>Aplicativo inspirado em redes sociais como o Instagram, com uma dinâmica voltada para postagens visuais e conversas diretas.</p>
+                        <div class="tech_stack">
+                            <span class="tech_title" data-key="tecnologias">Tecnologias utilizadas:</span>
+
+                            <div class="tech_list">
+                                <div class="tech">
+                                    <i class="fa-brands fa-react"></i>
+                                    <span>React Native</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://github.com/ferreirakaique/Rede-Social" target="_blank" data-key="ver_repositorio">Ver
+                            repositório</a>
+                    </div>
+                </div>
+
+                <div class="projeto_card conectahub">
+                    <div class="projeto_img">
+                        <img src="img/conectahub.png" alt="">
+                    </div>
+                    <div class="projeto_content">
+                        <h1>ConectaHub</h1>
+                        <p>Plataforma web de uma rede social. Permite o cadastro e login de usuários, a publicação de novas postagens e possui um chat interativo entre os usuários.</p>
+                            <div class="tech_stack">
+                            <span class="tech_title" data-key="tecnologias">Tecnologias utilizadas:</span>
+
+                            <div class="tech_list">
+                                <div class="tech">
+                                    <i class="fa-brands fa-php"></i>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-solid fa-database"></i>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://github.com/joaopedro-07/ConectaHub_RedeSocial" target="_blank"
+                            data-key="ver_repositorio">Ver repositório</a>
+                    </div>
+                </div>
+
+                <div class="projeto_card historiafoco">
+                    <div class="projeto_img">
+                        <img src="img/HISTORIA-BRANCO-SEM-FUNDO.png" alt="">
+                    </div>
+                    <div class="projeto_content">
+                        <h1>História em Foco</h1>
+                        <p>Plataforma destinada a ajudar estudantes a aprimorar seus conhecimentos em História,
+                            oferecendo conteúdos e recursos educativos para facilitar a preparação para
+                            vestibulares.
+                        </p>
+                        <div class="tech_stack">
+                            <span class="tech_title" data-key="tecnologias">Tecnologias utilizadas:</span>
+
+                            <div class="tech_list">
+                                <div class="tech">
+                                    <i class="fa-brands fa-php"></i>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-brands fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-solid fa-database"></i>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://github.com/ferreirakaique/SENAI-HISTORIA" target="_blank"
+                            data-key="ver_repositorio">Ver
+                            repositório</a>
+                    </div>
+                </div>
+
+                <div class="projeto_card softdev">
+                    <div class="projeto_img">
+                        <img src="img/softdev.png" alt="">
+                    </div>
+                    <div class="projeto_content">
+                        <h1>Matemática Financeira</h1>
+                        <p>Ferramenta prática para simplificar o controle financeiro, ajudando na
+                            organização
+                            das despesas e promovendo o bem-estar financeiro do usuário.</p>
+                        <div class="tech_stack">
+                            <span class="tech_title" data-key="tecnologias">Tecnologias utilizadas:</span>
+
+                            <div class="tech_list">
+                                <div class="tech">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <span>HTML</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-brands fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://ferreirakaique.github.io/MATEMATICA_FINANCEIRA/" target="_blank"
+                            data-key="ver_projeto">Ver projeto</a>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://github.com/ferreirakaique/MATEMATICA_FINANCEIRA" target="_blank"
+                            data-key="ver_repositorio">Ver repositório</a>
+                    </div>
+                </div>
+
+                <div class="projeto_card tda">
+                    <div class="projeto_img">
+                        <img src="img/logo_tda.png" alt="">
+                    </div>
+                    <div class="projeto_content">
+                        <h1>TDA (Tecnologia, Desenvolvimento e Análise)</h1>
+                        <p>Primeiro projeto semestral desenvolvido durante o curso técnico. Site simples que conta sobre
+                            a empresa fictícia "TDA" e promove a venda de um produto.</p>
+                        <div class="tech_stack">
+                            <span class="tech_title" data-key="tecnologias">Tecnologias utilizadas:</span>
+
+                            <div class="tech_list">
+                                <div class="tech">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <span>HTML</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://ferreirakaique.github.io/SITE-DO-TDA/" target="_blank"
+                            data-key="ver_projeto">Ver projeto</a>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://github.com/ferreirakaique/SITE-DO-TDA" target="_blank"
+                            data-key="ver_repositorio">Ver repositório</a>
+                    </div>
+                </div>
+
+                <div class="projeto_card spotify">
+                    <div class="projeto_img">
+                        <img src="img/image.png" alt="">
+                    </div>
+                    <div class="projeto_content">
+                        <h1>Recriação de telas do Spotify</h1>
+                        <p>Um dos primeiros projetos do curso técnico em Desenvolvimento de Sistemas no SENAI.
+                            Replicação leal do front-end da página inicial e de login do Spotify.
+                        </p>
+                        <div class="tech_stack">
+                            <span class="tech_title" data-key="tecnologias">Tecnologias utilizadas:</span>
+
+                            <div class="tech_list">
+                                <div class="tech">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <span>HTML</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                </div>
+                                <div class="tech">
+                                    <i class="fa-brands fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://joaopedro-07.github.io/SPOTIFY/" target="_blank" data-key="ver_projeto">Ver
+                            projeto</a>
+                    </div>
+                    <div class="projeto_btn">
+                        <a href="https://github.com/joaopedro-07/SPOTIFY" target="_blank"
+                            data-key="ver_repositorio">Ver repositório</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="section">
+            <div class="container-contato">
+                <div class="contato-titulo">
+                    <h2 data-key="contato">Contato</h2>
+                    <p data-key="desc_contato">Entre em contato comigo através das minhas redes ou por e-mail.</p>
+                </div>
+                <div class="contato-content">
+                    <div class="contato-info">
+                        <h3 data-key="info_contato">Informações de Contato</h3>
+                        <p><i class="fa-solid fa-envelope"></i> jotapepe.machado@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +55 (12) 98898-2050</p>
+                        <p><i class="fa-solid fa-location-dot"></i> São José dos Campos, São Paulo, Brasil</p>
+                        <div class="contato-socials">
+                            <a href="https://github.com/joaopedro-07" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-da-cunha-machado-2089482b7/"
+                                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/jp.machado_07" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr class="footer_divisor">
+    <footer>
+        <div>
+            <p>joaopedro-07</p>
+            <p id="direitos" data-key="direitos_reservados"> © 2026 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <button id="backToTop" title="Voltar ao topo">↑</button>
+
+    <div class="theme-switcher">
+        <button id="theme-toggle">
+            <img src="img/paint-palette.png" alt="">
+        </button>
+
+        <div class="theme-options">
+            <div class="theme-color" data-theme="green"></div>
+            <div class="theme-color blue" data-theme="blue"></div>
+            <div class="theme-color red" data-theme="red"></div>
+            <div class="theme-color orange" data-theme="orange"></div>
+            <div class="theme-color purple" data-theme="purple"></div>
+
+        </div>
+    </div>
+
+    <!-- <div class="spotlight"></div> -->
+</body>
+
+<script>
+    const btnMobile = document.getElementById('btn-mobile');
+    const nav = document.querySelector('.navbar');
+    const navLinks = document.querySelectorAll('.navbar ul li a');
+    const backToTop = document.getElementById('backToTop');
+
+    // --- MENU RESPONSIVO ---
+    btnMobile.addEventListener('click', () => {
+        if (nav.classList.contains('active')) {
+            nav.classList.add('closing');
+            setTimeout(() => {
+                nav.classList.remove('active', 'closing');
+            }, 100);
+        } else {
+            nav.classList.add('active');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (nav.classList.contains('active')) {
+                nav.classList.add('closing');
+                setTimeout(() => {
+                    nav.classList.remove('active', 'closing');
+                }, 100);
+            }
+        });
+    });
+
+    // --- BOTÃO BACK TO TOP ---
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+
+
+</html>
