@@ -25,15 +25,10 @@ window.addEventListener('scroll', function () {
 const typingElement = document.getElementById("typing-text");
 
 const textos = [
-    "Técnico em Desenvolvimento de Sistemas",
-    "Web",
-    "Mobile",
-    "Tecnologia",
-    "Inovação",
-    "Software",
-    "Cloud",
-    "Experiências Digitais",
-    "Automação"
+    "Desenvolvimento Web",
+    "Desenvolvimento Mobile",
+    "Computação em Nuvem",
+    "Banco de Dados",
 ];
 
 // let textos = [...translations.pt.typing];
