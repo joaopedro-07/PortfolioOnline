@@ -212,7 +212,7 @@ Beyond my formal education, I seek constant evolution through courses from Cisco
             "Bases de Datos"
         ],
         slogan_fixo: "Experiencia en:",
-        baixar: "Descargar Currículum",
+        baixar: "Descargar CV",
         p_inicio: "Estudiante de Análisis y Desarrollo de Sistemas en el SENAI, con formación técnica en Desarrollo de Sistemas. Desarrollo aplicaciones web y móviles con enfoque en buenas prácticas, organización de código y construcción de soluciones eficientes.",
         texto_sobre: `Mi trayectoria en la tecnología comenzó durante el curso técnico en Desarrollo de Sistemas en el SENAI, finalizado en 2025. Fue en ese periodo que consolidé mi base en programación y participé en diversos proyectos prácticos que involucraron desarrollo web, móvil, integración con APIs y uso de bases de datos.
 
