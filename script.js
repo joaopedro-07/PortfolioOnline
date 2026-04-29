@@ -96,6 +96,7 @@ const translations = {
             "Banco de Dados"
         ],
         slogan_fixo: "Atuação em",
+        baixar: "Baixar currículo",
         p_inicio: "Estudante de Análise e Desenvolvimento de Sistemas pelo SENAI, com formação técnica em Desenvolvimento de Sistemas. Desenvolvo aplicações web e mobile com foco em boas práticas, organização de código e construção de soluções eficientes.",
         texto_sobre: `Minha trajetória na tecnologia começou durante o curso técnico em Desenvolvimento de Sistemas no SENAI, concluído em 2025. Foi nesse período que consolidei minha base em programação e participei de diversos projetos práticos envolvendo desenvolvimento web, mobile, integração com APIs e uso de bancos de dados.
         
@@ -153,6 +154,7 @@ const translations = {
             "Database Management"
         ],
         slogan_fixo: "Working in:",
+        baixar: "Download resume",
         p_inicio: "Systems Analysis and Development student at SENAI, with a technical background in Systems Development. I develop web and mobile applications focusing on best practices, clean code, and building efficient solutions.",
         texto_sobre: `My journey in technology began during my Technical degree in Systems Development at SENAI, completed in 2025. During this period, I consolidated my programming foundation and participated in several practical projects involving web and mobile development, API integration, and database management.
 
@@ -210,6 +212,7 @@ Beyond my formal education, I seek constant evolution through courses from Cisco
             "Bases de Datos"
         ],
         slogan_fixo: "Experiencia en:",
+        baixar: "Descargar Currículum",
         p_inicio: "Estudiante de Análisis y Desarrollo de Sistemas en el SENAI, con formación técnica en Desarrollo de Sistemas. Desarrollo aplicaciones web y móviles con enfoque en buenas prácticas, organización de código y construcción de soluciones eficientes.",
         texto_sobre: `Mi trayectoria en la tecnología comenzó durante el curso técnico en Desarrollo de Sistemas en el SENAI, finalizado en 2025. Fue en ese periodo que consolidé mi base en programación y participé en diversos proyectos prácticos que involucraron desarrollo web, móvil, integración con APIs y uso de bases de datos.
 
